@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>machine</title>
+</head>
+
+<style>
+    h4{
+        text-transform: uppercase;
+    }
+    div {
+        background-color: #ffffff;
+        width: 40%;
+        border: double 25px #000000;
+        padding: 25px;
+        margin-left: 25%;
+        margin-top: 0%;
+    }
+
+    h3 {
+        font-size: 350%;
+    }
+    .align {
+
+    }
+textarea {
+    font-size: 350%;
+}
+
+    .button {
+        background-color: #a41723;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    var color = ["Orange", "Red", "Green","Blue","Yellow"];
+
+
+    function randomColor() {
+        choices = document.getElementById("choice").value.split("n");
+        if (choices.length == 0) return;
+        document.getElementById("result").value = choices[Math.floor(Math.random() * choices.length)]
+
+
+
+
+    }
+
+
+</script>
+
+<body background="4014207_t134d2e5d.gif">
+
+<div>
+    <center><h3>Feeling lucky?</h3></center>
+
+    <center><h4>Can you guess the color?</h4></center>
+
+
+
+    <!----<center><textarea id="choice" rows=1 cols=25 name="Green,Blue,yellow,Red,Orange" readonly>Green,Blue,yellow,Red,Orange
+    </textarea></center>--->
+
+    <ul id="choice">
+ lll
+    </ul>
+
+    <input type="text" id>
+    <input id="result" type="text" size="80" value="" readonly="readonly">
+    <input type="button" value="Lucky" onclick="chooseRandomly(); return false;">
+    
+</div>
+</body>
+</html>
